@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MP Style Guide</title>
+
+    <!-- Site theme -->
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+
+    <!--Links for Google Font Family-for MP style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+
+    <!--  Place Custom Styles Below -->
+    <style>
+        body {
+            font-family: 'M PLUS 1', sans-serif;
+            color: rgb(47, 54, 54);
+        }
+
+        #fontlight {
+            color: rgb(240, 253, 255);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color:rgb(47, 54, 54)
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color:rgb(30, 75, 84)
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        button {
+            background-color: rgb(30, 75, 84);
+
+            border-color: rgb(30, 75, 84);
+            padding: 10px;
+            color: rgb(240, 253, 255);
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: rgb(240, 253, 255);
+            color:rgb(30, 75, 84);
+            border-color: rgb(30, 75, 84);
+            border-style: solid;
+        }
+
+        .inputLabel {
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(47, 54, 54);
+        }
+
+        input.inputField {
+            padding: 5px;
+            border: 5px inset rgb(30, 75, 84, .5);
+            margin-left: 50px;
+        }
+
+        div.box {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            margin: 0 10px 0 10px;
+        }
+
+        #primary1 {
+            background-color: rgb(47, 54, 54);
+        }
+
+        #primary2 {
+            background-color: rgb(240, 253, 255);
+        }
+
+        #primary3 {
+            background-color: rgb(30, 75, 84);
+        }
+
+        .warning {
+            
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .danger {
+            color: red;
+        }
+
+        .success {
+            background-color: rgb(30, 75, 84, .25);
+            color: rgb(30, 75, 84);
+            padding: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        svg.svg-inline--fa {
+            color: white;
+        }
+
+        .spacer {
+            margin-top: 25px;
+        }
+
+        #footer {
+            border-top: 1px solid #dddddd;
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+	<!-- Include script for font awesome icon library -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+    <a name="Top"></a>
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#">
+                    <span class="navbar-brand">
+                        <i class="fas fa-home"></i>Master Plates Website Style Guide</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="#font">Font</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#colorTheme">Color Theme</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#headings">Headings</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#buttons">Buttons</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#formElements">Form Elements</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#messages">Messages</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#logo">Logo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <!-- About -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="about"></a>Master Plates Styles</h1>
+                </div>
+                <p>This page contains specific style guide information for the front end interface of the Master Plates website.</p>
+            </div>
+            <!-- End About -->
+
+            <!-- Fonts -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="fonts"></a>Font</h1>
+                </div>
+                <p>Master Plates website utilizes the 'M PLUS 1', sans-serif fonts from Google Fonts.</p>
+                <p>Dark color font on light backgrounds.</p>
+                <p style ="background-color: rgb(47, 54, 54);color: rgb(240, 253, 255);">Light color font on dark backgrounds.</p>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Fonts -->
+
+            <!-- Color Theme -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="colorTheme"></a>Color Theme</h1>
+                </div>
+                <p>Master Plates Website incorporates the below color scheme in its interface:</p>
+                <div class="box" id="primary1"></div>
+                <div class="box" id="primary2"></div>
+                <div class="box" id="primary3"></div>
+                <p>The dark color, rgb(47, 54, 54) is the darkest color-no pure black.  The light color rgb(240, 253, 255) is the lightest color-no pure white.  The accent/teal color is rgb(30, 75, 84).</p>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Color Theme -->
+
+            <!-- Headings -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="headings"></a>Headings</h1>
+                </div>
+                <p>The below font sizes and styles are used Master Plates website for various content headings.  The colors will depend upon background, and will be one of the three colors in the color scheme.</p>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Headings -->
+
+            <!-- Buttons -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="buttons"></a>Buttons</h1>
+                </div>
+                <p>Master Plates website will feature buttons and hover with the below styling:.</p>
+                <button>My Button</button>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Buttons -->
+
+            <!-- Form Elements -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="formElements"></a>Form Elements</h1>
+                </div>
+                <p>For forms that Master Plates website will contain, it will contain input fields and labels with the below styling:</p>
+                <form>
+                    <label for="name" class="inputLabel">Name:</label>
+                    <input type="input" id="name" class="inputField" value="">
+                </form>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Form Elements -->
+
+            <!-- User Messages -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="messages"></a>Messages</h1>
+                </div>
+                <p>For various completed tasks, application notifications will be presented to the user based.  The following contextual messages will be used.</p>
+                <p class="warning">Warning!</p>
+                <p class="danger">Danger!</p>
+                <p class="success">Success!</p>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End User Messages -->
+            <!-- Logo -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="logo"></a>Logo</h1>
+                </div>
+                <p>The Master Plates logo that is to be utilized on the website is as follows:</p>
+                <img src="masterplateLogo.jpg">
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End Logo -->
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">Megan Perry-Style Guide Week 2-Maryville University/SWDV640-Summer2022</p>
+        </div>
+    </div>
+</body>
+
+</html>
